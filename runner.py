@@ -5,15 +5,16 @@ import unittest
 import argparse
 
 parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('--package', metavar='T', type=str, nargs='*', default="test",
+parser.add_argument('--package', metavar='T', type=str, nargs='*', default=['test'],
                     help='List of locations for test modules search.')
 
 args = parser.parse_args()
-
+print(vars(args)['package'])
 
 def main():
     modules = []
     for package in vars(args)['package']:
+        print(package)
         modules = modules + ([package + "." + name for _, name, _ in pkgutil.iter_modules([package])])
 
     print("Found modules: " + str(modules))
