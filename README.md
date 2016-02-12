@@ -41,14 +41,8 @@ Traverses through a particular package searching for test modules (based on unit
 
 Added command-line support to define packages where to locate the test modules.
 
-   usage: runner.py [-h] [--package [T [T ...]]]
+*usage: runner.py [-h] [--package [T [T ...]]]*
 
-   Test modules executor.
-
-   optional arguments:
-        -h, --help            show this help message and exit
-        --package [T [T ...]]
-                        List of locations for test modules search.
 
 # EXAMPLE:
 python runner.py --package anothertest
