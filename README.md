@@ -50,5 +50,5 @@ optional arguments:
   --package [T [T ...]]
                         List of locations for test modules search.
 
-EXAMPLE:
+# EXAMPLE:
 python runner.py --package anothertest
