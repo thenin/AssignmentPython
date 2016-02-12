@@ -31,3 +31,20 @@ Write a simple test framework that corresponds the following requirements:
      
 
 4. Write a simple test that shows the above requirements are satisfied.
+
+======================================================
+
+#Completion Report
+Solution is based on built-in 'unittest' module. 
+
+Developed and tested under Python v. 3.4.3
+
+Traverses through a particular package searching for test modules (based on unittest.TestCase class)
+
+Added command-line support to define packages where to locate the test modules.
+
+*usage: runner.py [-h] [--package [T [T ...]]]*
+
+
+# EXAMPLE:
+*python runner.py --package anothertest*
