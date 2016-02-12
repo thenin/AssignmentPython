@@ -33,6 +33,8 @@ Write a simple test framework that corresponds the following requirements:
 4. Write a simple test that shows the above requirements are satisfied.
 
 ======================================================
+
+#Completion Report
 Solution is based on built-in 'unittest' module. 
 
 Developed and tested under Python v. 3.4.3
