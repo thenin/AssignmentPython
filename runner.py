@@ -9,7 +9,7 @@ parser.add_argument('--package', metavar='T', type=str, nargs='*', default=['tes
                     help='List of locations for test modules search.')
 
 args = parser.parse_args()
-print(vars(args)['package'])
+
 
 def main():
     modules = []
