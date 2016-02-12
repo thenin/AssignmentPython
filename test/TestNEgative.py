@@ -5,7 +5,7 @@ from testsubjects import simplesubject
 from verifier import verifiers
 
 
-class MyTestCase(unittest.TestCase):
+class TestCaseNegative(unittest.TestCase):
     def test_simple_positive_comparison(self):
         verifiers.Verifiers.verify_equals(1, 10, 'Comparison failed')
 
