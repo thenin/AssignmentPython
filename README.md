@@ -34,8 +34,11 @@ Write a simple test framework that corresponds the following requirements:
 
 ======================================================
 Solution is based on built-in 'unittest' module. 
+
 Developed and tested under Python v. 3.4.3
-Traverses through a particular package searching for test modules ()
+
+Traverses through a particular package searching for test modules (based on unittest.TestCase class)
+
 Added command-line support to define packages where to locate the test modules.
 
 usage: runner.py [-h] [--package [T [T ...]]]
