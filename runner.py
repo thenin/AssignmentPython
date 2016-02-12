@@ -6,7 +6,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Test modules executor.')
 parser.add_argument('--package', metavar='T', type=str, nargs='*', default=['test'],
-                    help='List of locations for test modules search.')
+                    help="Optional. List of locations for test modules search. Default value is 'test'")
 
 args = parser.parse_args()
 
