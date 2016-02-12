@@ -45,4 +45,4 @@ Added command-line support to define packages where to locate the test modules.
 
 
 # EXAMPLE:
-python runner.py --package anothertest
+*python runner.py --package anothertest*
