@@ -2,15 +2,20 @@ __author__ = 'kguryanov'
 
 import pkgutil
 import unittest
+import argparse
 
-default_package_name = "test"
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('--package', metavar='T', type=str, nargs='*', default="test",
+                    help='List of locations for test modules search.')
+
+args = parser.parse_args()
 
 
 def main():
     modules = []
-    package_name = default_package_name
+    for package in vars(args)['package']:
+        modules = modules + ([package + "." + name for _, name, _ in pkgutil.iter_modules([package])])
 
-    modules = modules + ([package_name + "." + name for _, name, _ in pkgutil.iter_modules([package_name])])
     print("Found modules: " + str(modules))
 
     suite = unittest.TestSuite()
