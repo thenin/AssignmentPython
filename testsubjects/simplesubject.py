@@ -6,5 +6,5 @@ class SimpleSubject:
         return sum(args)
 
     @staticmethod
-    def do_reverse(in_str):
-        return in_str[::-1]
+    def do_multiply(a, b):
+        return a * b
